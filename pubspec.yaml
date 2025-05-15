@@ -26,10 +26,8 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/animations/
     - assets/fonts/
     - assets/svgs/
-
   fonts:
     - family: Gilroy
       fonts:

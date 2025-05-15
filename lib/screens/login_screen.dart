@@ -20,7 +20,7 @@ class LoginScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  width: ContextExt(context).getScreenWidth() * 0.56,
+                  width: context.getScreenWidth() * 0.56,
                   child: Text(
                     "Get your groceries with nectar",
                     style: TextStyle(fontFamily: "Gilroy", fontSize: 26),
