@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:online_groceries_market/extensions/context_ext.dart';
+import 'package:online_groceries_market/utils/colors.dart';
 
 class CartScreen extends StatefulWidget {
   const CartScreen({super.key});
@@ -62,7 +63,7 @@ class _CartScreenState extends State<CartScreen> {
               ? Container(
                 margin: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                 decoration: BoxDecoration(
-                  color: Color(0xFF53B175),
+                  color: AppColors.mainColor,
                   borderRadius: BorderRadius.circular(20),
                 ),
                 alignment: Alignment.center,
@@ -214,7 +215,7 @@ class CartItemWidgetState extends State<CartItemWidget> {
                             Text(
                               widget.description,
                               style: TextStyle(
-                                color: Color(0xFF7C7C7C),
+                                color: AppColors.mainGray,
                                 fontSize: 14,
                                 fontFamily: "Gilroy",
                                 fontWeight: FontWeight.w400,
@@ -250,7 +251,7 @@ class CartItemWidgetState extends State<CartItemWidget> {
                         Text(
                           quantity.toString(),
                           style: TextStyle(
-                            color: Color(0xFF181725),
+                            color: AppColors.mainBlack,
                             fontSize: 18,
                             fontFamily: "Gilroy",
                             fontWeight: FontWeight.w500,
@@ -272,7 +273,7 @@ class CartItemWidgetState extends State<CartItemWidget> {
                             });
                             widget.onChanged(quantity * widget.cost);
                           },
-                          icon: Icon(Icons.add, color: Color(0xFF53B175)),
+                          icon: Icon(Icons.add, color: AppColors.mainColor),
                         ),
                         Spacer(),
                         Text(

@@ -7,6 +7,7 @@ import 'package:online_groceries_market/screens/explore_screen.dart';
 import 'package:online_groceries_market/screens/fav_screen.dart';
 import 'package:online_groceries_market/screens/profile_screen.dart';
 import 'package:online_groceries_market/screens/shop_screen.dart';
+import 'package:online_groceries_market/utils/colors.dart';
 
 class NavigationScreen extends StatefulWidget {
   const NavigationScreen({super.key});
@@ -54,8 +55,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
                 selectectedIndex = value;
               });
             },
-            selectedItemColor: Color(0xFF53B175),
-            unselectedItemColor: Color(0xFF181725),
+            selectedItemColor: AppColors.mainColor,
+            unselectedItemColor: AppColors.mainBlack,
             showUnselectedLabels: true,
             showSelectedLabels: true,
             currentIndex: selectectedIndex,
@@ -66,8 +67,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
                   "assets/svgs/home.svg",
                   color:
                       selectectedIndex == 0
-                          ? Color(0xFF53B175)
-                          : Color(0xFF181725),
+                          ? AppColors.mainColor
+                          : AppColors.mainBlack,
                 ),
               ),
               BottomNavigationBarItem(
@@ -75,8 +76,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
                   "assets/svgs/explore.svg",
                   color:
                       selectectedIndex == 1
-                          ? Color(0xFF53B175)
-                          : Color(0xFF181725),
+                          ? AppColors.mainColor
+                          : AppColors.mainBlack,
                 ),
 
                 label: "Explore",
@@ -89,8 +90,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
 
                   color:
                       selectectedIndex == 2
-                          ? Color(0xFF53B175)
-                          : Color(0xFF181725),
+                          ? AppColors.mainColor
+                          : AppColors.mainBlack,
                 ),
               ),
               BottomNavigationBarItem(
@@ -98,8 +99,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
                   "assets/svgs/favorite.svg",
                   color:
                       selectectedIndex == 3
-                          ? Color(0xFF53B175)
-                          : Color(0xFF181725),
+                          ? AppColors.mainColor
+                          : AppColors.mainBlack,
                 ),
                 label: "Favorite",
               ),
@@ -108,8 +109,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
                   "assets/svgs/profile.svg",
                   color:
                       selectectedIndex == 4
-                          ? Color(0xFF53B175)
-                          : Color(0xFF181725),
+                          ? AppColors.mainColor
+                          : AppColors.mainBlack,
                 ),
                 label: "Profile",
               ),

@@ -5,6 +5,7 @@ import 'package:online_groceries_market/extensions/context_ext.dart';
 import 'package:online_groceries_market/screens/login_screen.dart';
 import 'package:online_groceries_market/screens/navigation_screen.dart';
 import 'package:online_groceries_market/screens/shop_screen.dart';
+import 'package:online_groceries_market/utils/colors.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -92,7 +93,7 @@ class OnboardingScreen extends StatelessWidget {
                 alignment: Alignment.center,
                 height: 60,
                 decoration: BoxDecoration(
-                  color: Color(0xFF53B175),
+                  color: AppColors.mainColor,
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Text(

@@ -1,12 +1,11 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'dart:developer';
 
-
 import 'package:flutter/material.dart';
 import 'package:online_groceries_market/extensions/context_ext.dart';
+import 'package:online_groceries_market/utils/colors.dart';
 
 class FavScreen extends StatefulWidget {
   const FavScreen({super.key});
@@ -20,7 +19,6 @@ class _FavScreenState extends State<FavScreen> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -34,7 +32,7 @@ class _FavScreenState extends State<FavScreen> {
                   style: TextStyle(
                     fontSize: 20,
                     fontFamily: "Gilroy",
-                    color: Color(0xff181725),
+                    color: AppColors.mainBlack,
                   ),
                 ),
               ),
@@ -55,7 +53,7 @@ class _FavScreenState extends State<FavScreen> {
                             style: TextStyle(
                               fontSize: 18,
                               fontFamily: "Gilroy",
-                              color: Color(0xFF181725),
+                              color: AppColors.mainBlack,
                             ),
                           ),
                         ],
@@ -64,7 +62,7 @@ class _FavScreenState extends State<FavScreen> {
                         "325ml, Price",
                         style: TextStyle(
                           fontSize: 16,
-                          color: Color(0xFf7C7C7C),
+                          color: AppColors.mainGray,
                         ),
                       ),
                     ],
@@ -77,7 +75,7 @@ class _FavScreenState extends State<FavScreen> {
                         style: TextStyle(
                           fontSize: 16,
                           fontFamily: "Gilroy",
-                          color: Color(0xFF181725),
+                          color: AppColors.mainBlack,
                         ),
                       ),
                       SizedBox(width: 16),
@@ -105,7 +103,7 @@ class _FavScreenState extends State<FavScreen> {
                             style: TextStyle(
                               fontSize: 18,
                               fontFamily: "Gilroy",
-                              color: Color(0xFF181725),
+                              color: AppColors.mainBlack,
                             ),
                           ),
                         ],
@@ -114,7 +112,7 @@ class _FavScreenState extends State<FavScreen> {
                         "3ml55, Price",
                         style: TextStyle(
                           fontSize: 16,
-                          color: Color(0xFf7C7C7C),
+                          color: AppColors.mainGray,
                         ),
                       ),
                     ],
@@ -127,7 +125,7 @@ class _FavScreenState extends State<FavScreen> {
                         style: TextStyle(
                           fontSize: 16,
                           fontFamily: "Gilroy",
-                          color: Color(0xFF181725),
+                          color: AppColors.mainBlack,
                         ),
                       ),
                       SizedBox(width: 16),
@@ -156,7 +154,7 @@ class _FavScreenState extends State<FavScreen> {
                             style: TextStyle(
                               fontSize: 18,
                               fontFamily: "Gilroy",
-                              color: Color(0xFF181725),
+                              color: AppColors.mainBlack,
                             ),
                           ),
                         ],
@@ -165,7 +163,7 @@ class _FavScreenState extends State<FavScreen> {
                         "325L, Price",
                         style: TextStyle(
                           fontSize: 16,
-                          color: Color(0xFf7C7C7C),
+                          color: AppColors.mainGray,
                         ),
                       ),
                     ],
@@ -178,7 +176,7 @@ class _FavScreenState extends State<FavScreen> {
                         style: TextStyle(
                           fontSize: 16,
                           fontFamily: "Gilroy",
-                          color: Color(0xFF181725),
+                          color: AppColors.mainBlack,
                         ),
                       ),
                       SizedBox(width: 16),
@@ -206,7 +204,7 @@ class _FavScreenState extends State<FavScreen> {
                             style: TextStyle(
                               fontSize: 18,
                               fontFamily: "Gilroy",
-                              color: Color(0xFF181725),
+                              color: AppColors.mainBlack,
                             ),
                           ),
                         ],
@@ -215,7 +213,7 @@ class _FavScreenState extends State<FavScreen> {
                         "325ml, Price",
                         style: TextStyle(
                           fontSize: 16,
-                          color: Color(0xFf7C7C7C),
+                          color: AppColors.mainGray,
                         ),
                       ),
                     ],
@@ -228,7 +226,7 @@ class _FavScreenState extends State<FavScreen> {
                         style: TextStyle(
                           fontSize: 16,
                           fontFamily: "Gilroy",
-                          color: Color(0xFF181725),
+                          color: AppColors.mainBlack,
                         ),
                       ),
                       SizedBox(width: 16),
@@ -256,7 +254,7 @@ class _FavScreenState extends State<FavScreen> {
                             style: TextStyle(
                               fontSize: 18,
                               fontFamily: "Gilroy",
-                              color: Color(0xFF181725),
+                              color: AppColors.mainBlack,
                             ),
                           ),
                         ],
@@ -265,7 +263,7 @@ class _FavScreenState extends State<FavScreen> {
                         "330ml, Price",
                         style: TextStyle(
                           fontSize: 16,
-                          color: Color(0xFf7C7C7C),
+                          color: AppColors.mainGray,
                         ),
                       ),
                     ],
@@ -278,7 +276,7 @@ class _FavScreenState extends State<FavScreen> {
                         style: TextStyle(
                           fontSize: 16,
                           fontFamily: "Gilroy",
-                          color: Color(0xFF181725),
+                          color: AppColors.mainBlack,
                         ),
                       ),
                       SizedBox(width: 16),
@@ -295,7 +293,7 @@ class _FavScreenState extends State<FavScreen> {
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(14),
-                  color: Color(0xFf53B175),
+                  color: AppColors.mainColor,
                 ),
                 width: 364,
                 height: 67,
@@ -307,7 +305,7 @@ class _FavScreenState extends State<FavScreen> {
                     style: TextStyle(
                       fontSize: 18,
                       fontFamily: "Gilroy",
-                      color: Color(0xFFFCFCFC),
+                      color: AppColors.mainWhite,
                     ),
                   ),
                 ),
@@ -317,8 +315,5 @@ class _FavScreenState extends State<FavScreen> {
         ),
       ),
     );
-
-    return Scaffold();
-
   }
 }

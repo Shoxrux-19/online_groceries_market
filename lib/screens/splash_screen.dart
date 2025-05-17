@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:online_groceries_market/screens/onboarding_screen.dart';
+import 'package:online_groceries_market/utils/colors.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -25,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF53B175),
+      backgroundColor: AppColors.mainColor,
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
