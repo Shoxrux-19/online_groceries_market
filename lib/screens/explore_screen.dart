@@ -1,7 +1,5 @@
 // import 'dart:ui_web';
 
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
@@ -198,7 +196,6 @@ class ExploreScreen extends StatelessWidget {
                   ],
                 ),
               ),
-
               Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 20,
